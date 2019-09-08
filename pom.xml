@@ -34,7 +34,7 @@
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>1.7.7</version>
-    </dependency>-->
+    </dependency>
     <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
@@ -65,7 +65,7 @@
 			<plugin>
     					<groupId>org.codehaus.sonar</groupId>
     <artifactId>sonar-maven-plugin</artifactId>
-    <version>3.6.2</version>
+    <version>3.3.0.603</version>
 	<configuration>
         <sonar.sources>src/main/java/cts/pfj/git/PFJWithGIT</sonar.sources>
     </configuration>
