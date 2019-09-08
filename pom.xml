@@ -66,6 +66,12 @@
     					<groupId>org.codehaus.sonar</groupId>
     <artifactId>sonar-maven-plugin</artifactId>
     <version>3.6.2</version>
+	<exclusions>
+              <exclusion>
+                <groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+			   </exclusion>
+        </exclusions>
     					<executions>
     						<execution>
     							<goals>
