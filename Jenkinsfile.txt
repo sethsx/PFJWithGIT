@@ -1,8 +1,14 @@
 node {
-    stage 'Checkout'
-
     checkout scm
 
+agent any
+    stages {
+        stage('Build') {
+            steps {
+                bat 'set'
+            }
+        }
+    }
     stage 'Gradle Static Analysis'
     withSonarQubeEnv {
         sh "./gradlew clean sonarqube"
